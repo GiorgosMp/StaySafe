@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen">
+
+    <Button
+        android:id="@+id/bSignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="252dp"
+        android:onClick="signUp2"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTRPass"
+        app:layout_constraintTop_toBottomOf="@+id/editTRPass" />
+
+    <EditText
+        android:id="@+id/editTEmail2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTPass2"
+        app:layout_constraintEnd_toEndOf="@+id/editTPass2"
+        app:layout_constraintStart_toStartOf="@+id/editTPass2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTPass2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTRPass"
+        app:layout_constraintEnd_toEndOf="@+id/editTRPass"
+        app:layout_constraintStart_toStartOf="@+id/editTRPass"
+        app:layout_constraintTop_toBottomOf="@+id/editTEmail2" />
+
+    <EditText
+        android:id="@+id/editTRPass"
+        android:layout_width="218dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginBottom="45dp"
+        android:ems="10"
+        android:hint="REPEAT PASSWORD"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/bSignUp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTPass2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyScreen">
+
+    <Button
+        android:id="@+id/bVerify"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="85dp"
+        android:onClick="verify"
+        android:text="Press here to send you verification email "
+        app:layout_constraintBottom_toTopOf="@+id/bAlready"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVerify" />
+
+    <Button
+        android:id="@+id/bAlready"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="232dp"
+        android:onClick="already"
+        android:text=" have already recieved a verification email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bVerify" />
+
+    <TextView
+        android:id="@+id/tVerify"
+        android:layout_width="282dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="86dp"
+        android:text="You need to verify your email"
+        app:layout_constraintBottom_toTopOf="@+id/bVerify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

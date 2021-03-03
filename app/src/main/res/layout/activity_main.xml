@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bLogIn"
+        android:layout_width="191dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="logIn"
+        android:text="LOG IN"
+        app:layout_constraintBottom_toTopOf="@+id/bSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTPass" />
+
+    <Button
+        android:id="@+id/bSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="58dp"
+        android:onClick="signUp"
+        android:text="New User?Sign up now."
+        app:layout_constraintBottom_toTopOf="@+id/bFPass"
+        app:layout_constraintEnd_toEndOf="@+id/bFPass"
+        app:layout_constraintTop_toBottomOf="@+id/bLogIn" />
+
+    <Button
+        android:id="@+id/bFPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp"
+        android:onClick="forgetPassword"
+        android:text="Did you forget your password?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSignUp" />
+
+    <EditText
+        android:id="@+id/editTEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="EMAIL"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTPass"
+        android:layout_width="254dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/bLogIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTEmail" />
+</androidx.constraintlayout.widget.ConstraintLayout>
